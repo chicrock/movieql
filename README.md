@@ -50,3 +50,27 @@ Movie API with Graphql
 
 Can ask infomation what you want
 ```
+
+## schema
+
+### resolvers.js
+
+```js
+// Resolve the Query(Nodejs do something to functionality)
+const resolvers = {
+  Query: {
+    name: () => "nicolas",
+  },
+};
+```
+
+### Query
+
+```js
+type Query {
+  // use ! when is required
+  name: String!
+}
+```
+
+### Mutation
