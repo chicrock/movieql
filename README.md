@@ -1,7 +1,52 @@
 # movieql
+
 Movie API with Graphql
 
-## Install graphql-yoga
+## Install
+
+### babel-node
+
 ```bash
+]$ yarn global add babel-cli --ignore-engines
+]$ yarn add babel-cli babel-preset-env babel-preset-stage-3 --dev
+```
+
+### graphql-yoga
+
+```bash
+# https://github.com/prisma/graphql-yoga
 ]$ yarn add graphql-yoga
+```
+
+### nodemon
+
+```bash
+]$ yarn global add nodemon
+```
+
+## Config
+
+### packages.json
+
+```json
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  }
+```
+
+### .babelrc
+
+```json
+{
+  "presets": ["env", "stage-3"]
+}
+```
+
+## Problems solved by GraphQL
+
+```bash
+# Over-fetching : Get all data that is not use.
+# Under-fetching : Get not enough data. Request many times. Need to call many times to complete resource.
+
+Can ask infomation what you want
 ```
