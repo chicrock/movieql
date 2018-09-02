@@ -28,6 +28,8 @@ Movie API with Graphql
 
 ```bash
 ]$ yarn add node-fetch
+OR
+]$ yarn add axios
 ```
 
 ## Config
