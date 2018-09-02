@@ -24,6 +24,12 @@ Movie API with Graphql
 ]$ yarn global add nodemon
 ```
 
+### node-fetch
+
+```bash
+]$ yarn add node-fetch
+```
+
 ## Config
 
 ### packages.json
@@ -74,3 +80,14 @@ type Query {
 ```
 
 ### Mutation
+
+```js
+  type Mutation {
+    addMovie(name: String!, score: Int!): Movie!
+  }
+```
+
+### Movie Rest Api
+
+- [YTS.am](https://yts.am/api)
+- [List url on YTS.am](https://yts.am/api/v2/list_movies.json)
